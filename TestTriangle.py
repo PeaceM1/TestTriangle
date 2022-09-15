@@ -15,9 +15,12 @@ def classify_triangle(a, b, c):
         print('Not a right triangle')
 
 
-class TestTriangles(unittest.TestCase):
+class Testclassify_triangle(unittest.TestCase):
     def equal_sides(self):
         self.assertEqual(classify_triangle(2, 2, 2))
+
+    def noequal_sides(self):
+        self.assertNotEqual(classify_triangle(1, 2, 3))
 
 
 print('Enter 3 side lengths')
